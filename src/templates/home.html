@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+{%block title%}{{block.super}}|Home {%endblock title%}
+{%block content%}
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="container">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Image</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Draw</a>
+						</li>
+					</ul><!--vav nav-tabs-->
+					<div class="row">
+						<!-- Post Content Column -->
+						<div class="col-lg-8">
+							<!-- Title -->
+							<h1 class="mt-4">Description</h1>
+							<hr>
+							<!-- Date/Time -->
+							<p>Select the image you want to recognize and then press Submit button. The output will be shown in the right box.</p>
+							<hr>
+							<div class="input-group mb-3">
+								<div class="custom-file" style="margin-top:20px">
+									<input type="file" class="custom-file-input" id="inputGroupFile01">
+									<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+								</div>
+							</div>
+							<div class="text-center">
+								<button type="button" class="btn btn-primary text-center">Submit</button>
+								<button type="button" class="btn btn-secondary ">Clear</button>
+							</div>
+						</div>
+
+						<!-- Sidebar Widgets Column -->
+						<div class="col-md-4" style="margin-top:70px">
+							<!-- Search Widget -->
+							<div class="card my-4" >
+								<h5 class="card-header" style="text-align:center">Number </h5>
+									<div class="card-body">
+										<div class="input-group">
+											<input type="text" class="form-control" readonly="readonly" style="font-size: 100px; text-align:center" value="9">
+										</div>
+									</div>
+							</div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    {%endblock content%}
